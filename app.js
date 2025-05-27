@@ -1,12 +1,12 @@
 let listaDeNumerosSorteados = [];
-let numeroLitime = 9
+let numeroLitime = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Male',{rate:1.2});
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Male', { rate: 1.2 });
 }
 
 function exibirMensagenInicial() {
@@ -16,9 +16,9 @@ function exibirMensagenInicial() {
 
 exibirMensagenInicial();
 
-function verificarChute () {
+function verificarChute() {
     let chute = document.querySelector("input").value;
-    
+
     if (chute == numeroSecreto) {
         exibirTextoNaTela("h1", "acertou!");
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
@@ -40,12 +40,12 @@ function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLitime + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
-    if (quantidadeDeElementosNaLista == numeroLitime) { listaDeNumerosSorteados = [] 
-
+    if (quantidadeDeElementosNaLista == numeroLitime) {
+        listaDeNumerosSorteados = [];
     }
 
     while (listaDeNumerosSorteados.includes(numeroEscolhido)) {
-        numeroEscolhido = parseInt(Math.random() * 10 + 1);
+        numeroEscolhido = parseInt(Math.random() * numeroLitime + 1);
     }
     listaDeNumerosSorteados.push(numeroEscolhido);
     console.log(listaDeNumerosSorteados);
@@ -53,7 +53,7 @@ function gerarNumeroAleatorio() {
 }
 
 function limparCampo() {
-    document.querySelector("input").value = "";  
+    document.querySelector("input").value = "";
 }
 
 function reiniciarJogo() {
