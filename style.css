@@ -78,7 +78,7 @@ body::before {
     border-radius: 16px;
     background-color: #FFF;
     border: none;
-    color: #1875E8;
+    color: hwb(20 9% 9%);
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
