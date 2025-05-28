@@ -55,7 +55,7 @@ body::before {
 
 .container__botao {
     border-radius: 16px;
-    background: #1875E8;
+    background: lab(35.61% 71.97 -89.22);
     padding: 16px 24px;
     width: 100%;
     font-size: 24px;
@@ -69,14 +69,14 @@ body::before {
 }
 
 .container__texto-azul {
-    color: hsl(16, 82%, 50%);
+    color: #1875E8;
 }
 
 .container__input {
     width: 100%;
     height: 72px;
     border-radius: 16px;
-    background-color: #FFF;
+    background-color: hsl(174, 78%, 48%);
     border: none;
     color: hwb(20 9% 9%);
     padding: 2rem;
