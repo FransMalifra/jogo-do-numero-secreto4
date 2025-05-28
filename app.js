@@ -20,20 +20,19 @@ function verificarChute() {
     let chute = document.querySelector("input").value;
 
     if (chute == numeroSecreto) {
-   HEAD
-
         exibirTextoNaTela("h1", "acertou!!!!!!!!!!!!");
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
         let mensagemTentativa = `otimo, que sorte! , com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela("p", mensagemTentativa);
         document.getElementById("reiniciar").removeAttribute("disabled");
     } else {
-        tentativas++;
+        
         if (chute > numeroSecreto) {
             exibirTextoNaTela("p", "o numero secreto e menor");
         } else {
             exibirTextoNaTela("p", "o numero secreto e maior");
         }
+         tentativas++;
         limparCampo();
     }
 }
