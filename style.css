@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #ae1a95;
+    color: hwb(267 10% 32%);
 }
 
 body {
@@ -69,7 +69,7 @@ body::before {
 }
 
 .container__texto-azul {
-    color: #1875E8;
+    color: hsl(16, 82%, 50%);
 }
 
 .container__input {
