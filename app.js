@@ -14,13 +14,15 @@ function exibirMensagenInicial() {
     exibirTextoNaTela("p", "escolha um número de 1 a 100");
 }
 
-exibirMensagenInicial();
+exibirMensagenInicial()
 
 function verificarChute() {
     let chute = document.querySelector("input").value;
 
     if (chute == numeroSecreto) {
-        exibirTextoNaTela("h1", "acertou!!!!!!!!!!!!!");
+   HEAD
+
+        exibirTextoNaTela("h1", "acertou!!!!!!!!!!!!");
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
         let mensagemTentativa = `otimo, que sorte! , com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela("p", mensagemTentativa);
