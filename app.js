@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagenInicial() {
     exibirTextoNaTela("h1", "vamos jogar o jogo dos números, da sorte");
-    exibirTextoNaTela("p", "escolha um número de 1 a 100");
+    exibirTextoNaTela("p", "escolha um número de 1 a 50");
 }
 
 exibirMensagenInicial()
@@ -20,7 +20,7 @@ function verificarChute() {
     let chute = document.querySelector("input").value;
 
     if (chute == numeroSecreto) {
-        exibirTextoNaTela("h1", "acertou!!!!!!!!!!!!");
+        exibirTextoNaTela("h1", "acertou!");
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
         let mensagemTentativa = `otimo, que sorte! , com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela("p", mensagemTentativa);
