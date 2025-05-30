@@ -29,9 +29,7 @@ function verificarChute() {
         
         if (chute > numeroSecreto) {
             exibirTextoNaTela("p", "o numero secreto e menor");
-        } else {
-            exibirTextoNaTela("p", "o numero secreto e maior");
-        }
+
          tentativas++;
         limparCampo();
     }
